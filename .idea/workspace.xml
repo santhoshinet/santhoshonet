@@ -430,13 +430,13 @@
     </configuration>
     <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Rake.db:reset" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.db:create" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.db:seed" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="6" class="java.lang.String" itemvalue="Rails.Production: santhoshonet" />
-      <item index="7" class="java.lang.String" itemvalue="Rails.Development: santhoshonet" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Production: santhoshonet" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Development: santhoshonet" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:create" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.db:seed" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -601,14 +601,16 @@
         <state line="3" column="10" selection-start="39" selection-end="39" vertical-scroll-proportion="0.123188406" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8630137" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="0.20958903" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/plugins/.gitkeep">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
