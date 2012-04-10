@@ -66,9 +66,6 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (0.3.33)
 
-PLATFORMS
-  x86-mingw32
-
 DEPENDENCIES
   pg
   rails (= 3.0.3)
