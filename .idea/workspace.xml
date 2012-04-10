@@ -26,26 +26,7 @@
     <favorites_list name="santhoshonet" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="32" selection-start="166" selection-end="166" vertical-scroll-proportion="0.41062802">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="10" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -56,7 +37,6 @@
     <option name="VCS_SHOW_CONFIRMATION" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="GIT_EXECUTABLE" value="C:\Program Files (x86)\Git\bin\git.exe" />
     <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
     <option name="UPDATE_CHANGES_POLICY" value="STASH" />
   </component>
@@ -115,9 +95,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Favorites" />
       <pane id="RailsProjectView" />
+      <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -143,13 +123,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
-    <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="options.searchVisible" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -306,13 +286,6 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -342,9 +315,16 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -450,13 +430,13 @@
     </configuration>
     <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Rake.db:reset" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Production: santhoshonet" />
-      <item index="4" class="java.lang.String" itemvalue="Rails.Development: santhoshonet" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.db:create" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.db:seed" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.db:create" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.db:seed" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="6" class="java.lang.String" itemvalue="Rails.Production: santhoshonet" />
+      <item index="7" class="java.lang.String" itemvalue="Rails.Development: santhoshonet" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -487,17 +467,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="886" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17300789" sideWeight="0.58256274" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1758794" sideWeight="0.58256274" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41743726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41743726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -588,58 +568,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/temp/temp.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="18" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.5216178">
-          <folding />
-        </state>
+        <state line="22" column="18" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.5216178" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="96" selection-start="204" selection-end="204" vertical-scroll-proportion="0.09659091">
-          <folding />
-        </state>
+        <state line="4" column="96" selection-start="204" selection-end="204" vertical-scroll-proportion="0.09659091" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="142" selection-start="4509" selection-end="4509" vertical-scroll-proportion="0.7568741">
-          <folding />
-        </state>
+        <state line="78" column="142" selection-start="4509" selection-end="4509" vertical-scroll-proportion="0.7568741" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/opensources.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="87" selection-start="361" selection-end="361" vertical-scroll-proportion="0.21732955">
-          <folding />
-        </state>
+        <state line="9" column="87" selection-start="361" selection-end="361" vertical-scroll-proportion="0.21732955" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/contact.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="430" selection-end="430" vertical-scroll-proportion="0.24147727">
-          <folding />
-        </state>
+        <state line="10" column="47" selection-start="430" selection-end="430" vertical-scroll-proportion="0.24147727" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/aboutme.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="50" selection-start="395" selection-end="395" vertical-scroll-proportion="0.24147727">
-          <folding />
-        </state>
+        <state line="10" column="50" selection-start="395" selection-end="395" vertical-scroll-proportion="0.24147727" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="10" selection-start="39" selection-end="39" vertical-scroll-proportion="0.123188406" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8630137" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="166" selection-end="166" vertical-scroll-proportion="0.41062802">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="0.20958903" />
       </provider>
     </entry>
   </component>
