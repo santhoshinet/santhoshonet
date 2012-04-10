@@ -1,0 +1,116 @@
+/* Background images
+--------------------------------------------------*/
+body {
+	background:url('/images/bg.jpg') repeat;
+}
+.feature {
+	background:url('/images/v_line.png') repeat-y 220px 0;
+}
+#slide-pager a, #slide-pager a:visited {
+	background: transparent url("/images/slider_inactive.png") no-repeat center center;
+}
+#slide-pager a.activeSlide {
+	background: transparent url("/images/slider_active.png") no-repeat center center;
+}
+.cs-buttons a {
+	background: transparent url("/images/slider_inactive.png") no-repeat center center;
+}
+.cs-active {
+	background: transparent url("/images/slider_active.png") no-repeat center center!important;
+}
+/* Text colors from dark to light
+--------------------------------------------------*/
+#footer, .post-meta small, .pagination, #comments .comment-meta span {
+	color:#777;
+}
+body, table th, #logo h1, #search-form input[type=submit], .button,
+#respond input[type=submit], input[type=submit], .sf-menu a, .sf-menu a:visited  {
+	color:#b3b3b3;
+}
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .post-meta h1 a,
+.button:hover, input[type=submit]:hover, .widget h3{
+	color:#ccc;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+.post-meta h1 a:hover, .sf-menu li:hover, .sf-menu a:hover {
+	color:#fff;
+}
+/* Border & background color 
+--------------------------------------------------*/
+code, table th, table td,
+.info-area, #comments .comment,
+input, textarea, .widget {
+	border-color:#39414d;
+}
+hr, .sf-menu li li , .sf-menu li ul li, .sf-menu a:active {
+	background-color:#39414d;
+}
+hr {
+	color:#39414d;
+}
+.img-border {
+	background:#262c33;
+}
+/* Button gradients
+--------------------------------------------------*/
+input.submit, .button {
+	*background:url('/images/button-bg.png') repeat-x top left #303640; /* For IE7 */
+	background:url('/images/button-bg.png') repeat-x top left #303640\0/; /* For IE8 */
+}
+@media all and (min-width: 0px) {
+	input.submit, .button {
+		background: #39414d url("/images/button-bg.svg") repeat-x top left; /* For Opera */
+		
+		background:-moz-linear-gradient(center top , #434c59, #39414d);
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #434c59), color-stop(1, #39414d));
+
+		*background:url('/images/button-bg.png') repeat-x top left #303640; /* For IE7 */
+		background:url('/images/button-bg.png') repeat-x top left #303640\0/; /* For IE8 */
+	}
+}
+.button:hover, input.submit:hover {
+	*background:url('/images/button-bg-hover.png') repeat-x top left #303640; /* For IE7 */
+	background:url('/images/button-bg-hover.png') repeat-x top left #303640\0/; /* For IE8 */
+}
+@media all and (min-width: 0px) {
+	.button:hover, input.submit:hover {
+		background: #39414d url("/images/button-bg-hover.svg") repeat-x top left; /* For Opera */
+		
+		background:-moz-linear-gradient(center top , #4c5766, #39414d)!important;
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #4c5766), color-stop(1, #39414d))!important;
+		
+		*background:url('/images/button-bg-hover.png') repeat-x top left #303640; /* For IE7 */
+		background:url('/images/button-bg-hover.png') repeat-x top left #303640\0/; /* For IE8 */
+	}
+}
+/* Darker border color
+--------------------------------------------------*/
+input.submit, .button, .widget ul, .widget ul li  {
+	border-color:#303640!important;
+}
+/* Menu hover
+--------------------------------------------------*/
+.sf-menu li:hover, .sf-menu a:hover {
+	background:		#434C59;
+}
+/* Link color
+--------------------------------------------------*/
+a, .post-meta small a:hover, .pagination li a:hover ,
+.pagination li a.active, #comments .comment-reply-link:hover {
+	color:#6b89b3;
+}
+/* Link hover color
+--------------------------------------------------*/
+a:hover {
+	color:#8ab0e5;
+}
+/* Darker link color
+--------------------------------------------------*/
+.post-meta small a, .pagination li a, #comments .comment-reply-link {
+	color:#46638c;
+}
+/* Emphasized text
+--------------------------------------------------*/
+em {
+	color:#CC4A1F;
+}
