@@ -1,4 +1,6 @@
 Santhoshonet::Application.routes.draw do
+  resources :blogs
+
   resources :contributors
 
   resources :categories

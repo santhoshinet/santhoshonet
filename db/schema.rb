@@ -10,6 +10,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20120411120157) do
+
+  create_table "blogs", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.integer  "categories_id"
+    t.integer  "contributors_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "contributors", :force => true do |t|
+    t.string   "username"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

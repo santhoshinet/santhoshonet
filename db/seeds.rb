@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+["SharePoint","MS Project Server", "JQuery", "Ruby On Rails","Ruby", "Miscellaneous"].each do|category|
+  @category = Category.new
+  @category.name = category
+  @category.save
+end
+
+@contributor = Contributor.new
+@contributor.username = "Santhosh PS"
+@contributor.email = "santhoshonet@gmail.com"
+@contributor.save
+

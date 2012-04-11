@@ -1,15 +1,12 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Username:</b>
-  <%= @contributor.username %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @contributor.email %>
-</p>
-
-
-<%= link_to 'Edit', edit_contributor_path(@contributor) %> |
-<%= link_to 'Back', contributors_path %>
+<div class="two-thirds">
+    <p id="notice"><%= notice %></p>
+    <p>
+        <b>Username:</b>
+        <%= @contributor.username %>
+    </p>
+    <p>
+        <b>Email:</b>
+        <%= @contributor.email %>
+    </p>
+    <%= link_to 'Edit', edit_contributor_path(@contributor) %> |
+</div>
