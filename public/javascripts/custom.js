@@ -9,7 +9,6 @@ $(document).ready(function() {
 		animation:   {height:'show'},
 		speed:       'fast'
 	}); 
-
 	// jCycle slider initialization
 	$('#slides').cycle({
 		height: 360,
@@ -20,7 +19,6 @@ $(document).ready(function() {
 		pause: 1,
 		pager: '#slide-pager'
 	});
-
 	// Coin slider initialization
 	$('#coin-slider').coinslider({
 		width: 960,
@@ -28,20 +26,16 @@ $(document).ready(function() {
 		navigation: true,
 		delay: 5000
 	});
-
 	// Image/video hover effect
 	$('.zoom-image img, .zoom-video img').hoverIntent(function() {
 		$(this).stop().animate({'opacity': '0.4'}, 'slow'); 
 	}, function() {
 		$(this).stop().animate({'opacity': '1'}, 'slow');
 	});
-
-
 	// Fancybox - image popup effect
 	$("a.fancybox").fancybox({
 		'titlePosition'	: 'inside'
 	});
-
 	// Fancybox - YouTube popup effect
 	$("a.youtube").click(function() {
 		$.fancybox({
@@ -52,7 +46,6 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-
 	// Fancybox - Vimeo popup effect
 	$("a.vimeo").click(function() {
 		$.fancybox({
@@ -63,18 +56,20 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-
 	$(".error, .success").click(function () {
 		$(this).fadeTo(400, 0, function () {
 			$(this).slideUp(400);
 		});
 		return false;
 	});
-
-    
-
 });
-
 // Cufon text replacement
-//Cufon.replace('h1, h2, h3, h4, h5, h6', {hover:true, textShadow:'1px 1px #111'});
-//Cufon.replace('#logo span', {hover:false, color: '-linear-gradient(#eee, #999)', textShadow:'1px 1px #111'});
+try
+{
+    if(! $.browser.msie)
+    {
+        Cufon.replace('h1, h2, h3, h4, h5, h6', {hover:true, textShadow:'1px 1px #111'});
+        Cufon.replace('#logo span', {hover:false, color: '-linear-gradient(#eee, #999)', textShadow:'1px 1px #111'});
+    }
+}catch(e){}
+

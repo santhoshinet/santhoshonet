@@ -1,4 +1,13 @@
 <div class="two-thirds">
-    <h1>New blog</h1>
+    <h1>Add new note</h1>
     <%= render 'form' %>
 </div>
+<%=  javascript_include_tag "ckeditor" %>
+<%=  stylesheet_link_tag "contents" %>
+<script type="text/javascript" language="JavaScript">
+    CKEDITOR.replace( 'blog_content',
+    	{
+    		extraPlugins : 'autogrow',
+    		removePlugins : 'resize'
+    	});
+</script>
