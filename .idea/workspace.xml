@@ -38,7 +38,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/contributors/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/contributors/new.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/markitstyle.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/markittoolbarstyle.css" />
@@ -54,6 +53,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/public/javascripts/custom.js" />
         <option value="$PROJECT_DIR$/public/javascripts/contact.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -96,16 +96,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="santhoshonet" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -132,6 +122,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="santhoshonet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="RailsProjectView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="santhoshonet" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -466,14 +466,14 @@
       <method />
     </configuration>
     <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Rails.Production: santhoshonet" />
-      <item index="1" class="java.lang.String" itemvalue="Rails.Development: santhoshonet" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.db:reset" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.db:create" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.db:seed" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.db:reset" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.db:create" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.db:seed" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Production: santhoshonet" />
+      <item index="5" class="java.lang.String" itemvalue="Rails.Development: santhoshonet" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.spec" />
     </list>
     <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
@@ -531,9 +531,8 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48404256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18893678" sideWeight="0.44148937" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16451149" sideWeight="0.44148937" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -542,6 +541,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48404256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -602,11 +602,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/markitstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="44" selection-start="2785" selection-end="2785" vertical-scroll-proportion="0.48767123" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/markittoolbarstyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -624,84 +619,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/ckeditor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="2199" selection-start="40750" selection-end="40750" vertical-scroll-proportion="0.33142856">
-          <folding />
-        </state>
+        <state line="20" column="2199" selection-start="40750" selection-end="40750" vertical-scroll-proportion="0.33142856" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/blogs/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="323" selection-end="323" vertical-scroll-proportion="0.3617021">
-          <folding />
-        </state>
+        <state line="10" column="28" selection-start="323" selection-end="323" vertical-scroll-proportion="0.3617021" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/blogs.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="63" selection-start="3169" selection-end="3169" vertical-scroll-proportion="1.7743272">
-          <folding />
-        </state>
+        <state line="57" column="63" selection-start="3169" selection-end="3169" vertical-scroll-proportion="1.7743272" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/blogs/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="42" selection-start="262" selection-end="262" vertical-scroll-proportion="0.28936172">
-          <folding />
-        </state>
+        <state line="8" column="42" selection-start="262" selection-end="262" vertical-scroll-proportion="0.28936172" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="66" selection-start="349" selection-end="349" vertical-scroll-proportion="0.2531915">
-          <folding />
-        </state>
+        <state line="7" column="66" selection-start="349" selection-end="349" vertical-scroll-proportion="0.2531915" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/contact.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="35" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.74127907">
-          <folding />
-        </state>
+        <state line="30" column="35" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.74127907" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="21" selection-start="445" selection-end="445" vertical-scroll-proportion="0.42090786">
-          <folding />
-        </state>
+        <state line="18" column="21" selection-start="445" selection-end="445" vertical-scroll-proportion="0.42090786" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="45" selection-start="732" selection-end="732" vertical-scroll-proportion="0.29651162">
-          <folding />
-        </state>
+        <state line="12" column="45" selection-start="732" selection-end="732" vertical-scroll-proportion="0.29651162" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="52" selection-start="97" selection-end="97" vertical-scroll-proportion="0.023383768">
-          <folding />
-        </state>
+        <state line="1" column="52" selection-start="97" selection-end="97" vertical-scroll-proportion="0.023383768" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="6" selection-start="1577" selection-end="1604" vertical-scroll-proportion="0.71939474">
-          <folding />
-        </state>
+        <state line="69" column="6" selection-start="1577" selection-end="1604" vertical-scroll-proportion="0.71939474" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/contact.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="330" selection-end="330" vertical-scroll-proportion="0.32737276">
+        <state line="14" column="8" selection-start="330" selection-end="330" vertical-scroll-proportion="0.32737276" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="9" selection-start="49" selection-end="49" vertical-scroll-proportion="0.09353507">
           <folding />
         </state>
       </provider>
