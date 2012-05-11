@@ -17,3 +17,7 @@ end
 @contributor.email = "santhoshonet@gmail.com"
 @contributor.save
 
+@mail_config = MailCrendential.new
+@mail_config.username = "santhoshonet@gmail.com"
+@mail_config.password = "sivakumar2011"
+@mail_config.save

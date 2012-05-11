@@ -6,3 +6,4 @@ require File.expand_path('../application', __FILE__)
 Santhoshonet::Application.initialize!
 
 YAML::ENGINE.yamler = 'syck'
+

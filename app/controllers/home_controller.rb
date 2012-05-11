@@ -19,6 +19,7 @@ class HomeController < ApplicationController
       puts params[:message]
       @error = false
       @status = true
+      UserContact.deliver_contact_us(params[:email],params[:name],params[:message]).deliver
     end
     render :layout =>  false
   end
