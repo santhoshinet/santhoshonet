@@ -1,0 +1,2 @@
+module MailCredentialsHelper
+end

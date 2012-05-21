@@ -1,6 +1,9 @@
 class HomeController < ApplicationController
   protect_from_forgery :except => [:index, :contact]
+  before_filter :aim
+
   def index
+    @blogs = Blog.first(10)
   end
 
   def opensources

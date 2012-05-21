@@ -666,3 +666,9 @@ input.submit, .button {
 }
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.small
+{
+    width: 100px;
+    hegiht: 100px;
+}

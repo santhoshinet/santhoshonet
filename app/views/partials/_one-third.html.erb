@@ -1,0 +1,27 @@
+            <div class="one-third last">
+				<form id="search-form" method="post" action="">
+					<fieldset>
+						<input type="text" onfocus="if (this.value == 'Search here...')	{this.value = '';}" onblur="if (this.value == '') {this.value = 'Search here...';}" value="Search here..." />
+						<input type="submit" value="Search" class="submit" />
+					</fieldset>
+				</form>
+                <div class="widget">
+					<h3>Aim!!!</h3>
+					<p><strong>Technology</strong>,<br /><%=  @aim %></p>
+				</div>
+				<div class="widget">
+					<h3>About me</h3>
+					<p><strong>Santhosh PS</strong>, Chennai. I'm a developer cum lead working in ILink Systems, Chennai, having 7 years of experience in software development life cycle in various technologies of Windows, Web, Mobile applications and Embedded systems using .net framework 2.0/3.5/4.0 and also carried out development projects in C, C++, VB.net, C#.net, ASP.net 2.0/3.5, MS Sharepoint Server 2007/2010, MS Project Server 2007/2010, Javascripts, Jquery, Asp.net MVC 2.0/3.0, Ajax, Json, Xml, Ruby on Rails 2.3.8....3.0.3,... etc     </p>
+				</div>
+                <%=  render :partial => "/partials/categories" %>
+                <div class="widget">
+					<h3>Contribution</h3>
+				    We are inviting you to contribute your ideas and thoughts. If you are interested please contact us by dropping a mail to <a href="mailto:santhoshonet@gmail.com">santhoshonet@gmail.com</a>
+                    <p></p>
+				</div>
+				<div class="widget">
+					<h3>Advertisements</h3>
+					For your adds, please contact us by dropping a mail to <a href="mailto:santhoshonet@gmail.com">santhoshonet@gmail.com</a>
+                    <p></p>
+				</div>
+			</div>

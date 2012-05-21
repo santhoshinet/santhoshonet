@@ -1,12 +1,24 @@
 <div class="two-thirds">
     <p id="notice"><%= notice %></p>
-    <p>
-        <b>Title:</b>
-        <%= @blog.title %>
-    </p>
-    <p>
-        <b>Content:</b>
-        <%= @blog.content %>
-    </p>
-    <%= link_to 'Edit', edit_blog_path(@blog) %> |
+    <div class="post">
+	    <div class="post-meta">
+            <h1><a href="#"><%= @blog.title %></a></h1>
+            <small><%= @blog.updated_at.strftime("%b %d, %Y") %></small>
+            <% contributor = nil
+                unless @blog.contributors_id.nil? then contributor = Contributor.find(@blog.contributors_id) end %>
+			<small>by <a href="#"><%= if contributor.nil? then "" else contributor.username end %></a></small>
+            <% category = nil
+                unless @blog.categories_id.nil? then category = Category.find(@blog.categories_id) end %>
+			<small>in <a href="#"><%= if category.nil? then "" else category.name end %></a></small>
+		</div>
+        <p>
+          <%= @blog.content.html_safe %>
+        </p>
+	</div><!--post ends-->
+    <!-- START: Livefyre Embed -->
+    <script type='text/javascript' src='http://zor.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
+    <script type='text/javascript'>
+        var fyre = LF({ site_id: 301633 });
+    </script>
+    <!-- END: Livefyre Embed -->
 </div>

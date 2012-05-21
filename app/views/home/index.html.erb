@@ -1,22 +1,38 @@
             <div class="two-thirds">
-				<div class="post">
-					<div class="post-meta">
-						<h1><a href="">Hello!</a></h1>
-						<small>Thank you for visiting us, keep visit for interesting notes, we will keep you update....</small>
-						<small><a href="#"></a></small>
-						<small><a href="#"></a></small>
-						<small><a href="#"></a></small>
-					</div>
-					<p> <%= image_tag "speed_up_software_development.jpg" %> </p>
-					<a class="read-more" href="#"></a>
-				</div><!--post ends-->
-				<hr />
-                <!-- START: Livefyre Embed -->
-                <script type='text/javascript' src='http://zor.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
-                <script type='text/javascript'>
-                    var fyre = LF({
-                        site_id: 301633
-                });
-                </script>
-                <!-- END: Livefyre Embed -->
+              <% if @blogs.count > 0  %>
+			     <% @blogs.each do |blog| %>
+                    <div class="post">
+					    <div class="post-meta">
+						    <h1><a href="/blog/<%= blog.id %>/<%= blog.title %>"><%= blog.title %></a></h1>
+    						<small><%=  blog.updated_at.strftime("%b %d, %Y") %></small>
+                            <% contributor = nil
+                               unless blog.contributors_id.nil? then contributor = Contributor.find(blog.contributors_id) end %>
+			    			<small>by <a href="#"><%= if contributor.nil? then "" else contributor.username end %></a></small>
+                            <% category = nil
+                               unless blog.categories_id.nil? then category = Category.find(blog.categories_id) end %>
+                            <% unless category.nil? %>
+		    				    <small>in <a href="/category/<%= category.name %>"><%= category.name %></a></small>
+                            <% end %>
+			    			<small><a href="#"></a></small>
+				    	</div>
+					    <p><%=  blog.content[0..700].html_safe %> ...</p>
+    					<a class="read-more" href="/blog/<%= blog.id %>/<%= blog.title %>">Read more</a>
+	    			</div><!--post ends-->
+		    		<hr />
+                 <% end %>
+              <% else %>
+                <div class="post">
+                    <div class="post-meta">
+                  	    <h1>Note book empty for this category</h1>
+                    </div>
+                  	<p>Keep subscribe to this blog, we will share you interesting notes</p>
+                  </div><!--post ends-->
+                <hr />
+              <% end %>
+               <!-- START: Livefyre Embed -->
+               <script type='text/javascript' src='http://zor.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
+               <script type='text/javascript'>
+                var fyre = LF({ site_id: 301633 });
+               </script>
+               <!-- END: Livefyre Embed -->
 			</div>

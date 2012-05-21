@@ -32,10 +32,24 @@ $(document).ready(function() {
 	}, function() {
 		$(this).stop().animate({'opacity': '1'}, 'slow');
 	});
+
 	// Fancybox - image popup effect
-	$("a.fancybox").fancybox({
-		'titlePosition'	: 'inside'
-	});
+    //$("a.fancybox").fancybox({
+	//	'titlePosition'	: 'inside'
+	//});
+
+    $("a.fancybox").fancybox({
+    				helpers: {
+    					title : {
+    						type : 'outside'
+    					},
+    					overlay : {
+    						speedIn : 500,
+    						opacity : 0.1
+    					}
+    				}
+    			});
+
 	// Fancybox - YouTube popup effect
 	$("a.youtube").click(function() {
 		$.fancybox({

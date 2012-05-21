@@ -1,9 +1,9 @@
 class BlogsController < ApplicationController
+         before_filter :load_categories, :aim
   # GET /blogs
   # GET /blogs.xml
   def index
     @blogs = Blog.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @blogs }
@@ -14,10 +14,18 @@ class BlogsController < ApplicationController
   # GET /blogs/1.xml
   def show
     @blog = Blog.find(params[:id])
+    render :layout => "application"
+  end
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @blog }
+  # displaying category wise
+  def category_wise
+    category_name = params[:category]
+    unless category_name.nil?
+      category = Category.find_by_name(category_name)
+      unless category.nil?
+        @blogs = Blog.find_all_by_categories_id(category.id)
+        render :'home/index' , :layout => "application"
+      end
     end
   end
 
@@ -25,7 +33,6 @@ class BlogsController < ApplicationController
   # GET /blogs/new.xml
   def new
     @blog = Blog.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @blog }
@@ -41,7 +48,12 @@ class BlogsController < ApplicationController
   # POST /blogs.xml
   def create
     @blog = Blog.new(params[:blog])
-
+    contributor = Contributor.find(1)
+    @blog.contributors_id = contributor.id
+    @blog.contributor = contributor
+    category = Category.find(params[:name][:category_id])
+    @blog.categories_id = category.id
+    @blog.category = category
     respond_to do |format|
       if @blog.save
         format.html { redirect_to(@blog, :notice => 'Blog was successfully created.') }
@@ -57,7 +69,6 @@ class BlogsController < ApplicationController
   # PUT /blogs/1.xml
   def update
     @blog = Blog.find(params[:id])
-
     respond_to do |format|
       if @blog.update_attributes(params[:blog])
         format.html { redirect_to(@blog, :notice => 'Blog was successfully updated.') }
@@ -80,4 +91,5 @@ class BlogsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
 end

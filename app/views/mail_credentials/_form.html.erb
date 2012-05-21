@@ -1,0 +1,21 @@
+<form action="add">
+  <% if @mail_cred.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mail_cred.errors.count, "error") %> prohibited this blog from being saved:</h2>
+      <ul>
+      <% @mail_cred.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <input type="password" name="username" />
+  </div>
+  <div class="field">
+    <input type="password" name="password" />
+  </div>
+  <div class="actions">
+    <input type="submit"  value="Add">
+  </div>
+</form>
