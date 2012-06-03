@@ -85,7 +85,6 @@ class BlogsController < ApplicationController
   def destroy
     @blog = Blog.find(params[:id])
     @blog.destroy
-
     respond_to do |format|
       format.html { redirect_to(blogs_url) }
       format.xml  { head :ok }
