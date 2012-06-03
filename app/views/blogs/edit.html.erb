@@ -3,3 +3,12 @@
     <%= render 'form' %>
     <%= link_to 'Show', @blog %> |
 </div>
+<%=  javascript_include_tag "ckeditor" %>
+<%=  stylesheet_link_tag "contents" %>
+<script type="text/javascript" language="JavaScript">
+    CKEDITOR.replace( 'blog_content',
+    	{
+    		extraPlugins : 'autogrow',
+    		removePlugins : 'resize'
+    	});
+</script>

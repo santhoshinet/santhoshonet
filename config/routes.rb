@@ -15,7 +15,7 @@ Santhoshonet::Application.routes.draw do
   match "/opensources" , :controller => "home", :action => "opensources"
   match "/blog/:id/:title", :controller => "blogs", :action => "show"
   match "/category/:category", :controller => "blogs", :action => "category_wise"
-  match ":controller/:action(:id)"
+  match ":controller/:action"
 
 
 end
