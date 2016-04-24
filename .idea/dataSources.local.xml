@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails santhoshonet: test" uuid="cd9b210e-28b5-4a73-808c-115651d45254">
+      <user-name>santhosh</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedfeadf9bdf98df99</user-password>
+      <schema-pattern>santhoshonet_test.pg_catalog santhoshonet_test.public</schema-pattern>
+      <default-schemas>santhoshonet_test.public</default-schemas>
+    </data-source>
+    <data-source name="Rails santhoshonet: production" uuid="24f0c767-53d8-4a0d-9ab7-d7365d48f007">
+      <first-sync>true</first-sync>
+      <user-name>santhosh</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedfeadf9bdf98df99</user-password>
+    </data-source>
+    <data-source name="Rails santhoshonet: development" uuid="111de345-79f1-48bc-9a33-f645c99ae0df">
+      <user-name>santhosh</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedfeadf9bdf98df99</user-password>
+      <schema-pattern>santhoshonet_development.pg_catalog santhoshonet_development.public</schema-pattern>
+      <default-schemas>santhoshonet_development.public</default-schemas>
+    </data-source>
+  </component>
+</project>

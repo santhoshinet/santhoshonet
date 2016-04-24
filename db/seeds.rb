@@ -11,7 +11,7 @@ end
 @contributor.save
 
 aim = Aim.new
-aim.title = "The more you know, the better you can use."
+aim.title = "The more you know, the better you can solve the problem."
 aim.save
 
 #@mail_config = MailCrendential.new

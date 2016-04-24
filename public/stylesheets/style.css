@@ -135,6 +135,29 @@ table td {
 #logo {
 	float:left;
 }
+
+#logo img
+{
+	border-radius:50%;
+	overflow:hidden;
+	height: 70px;
+	width: 70px;
+	float: left;
+}
+
+#logo p{
+	float: left;
+	margin-left: 10px;
+}
+
+.profilepic
+{
+	border-radius:50%;
+	overflow:hidden;
+	height: 105px;
+	width: 140px;
+}
+
 #nav {
 	float:right;
 	margin-top:30px;
