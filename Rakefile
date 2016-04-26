@@ -5,7 +5,6 @@ require File.expand_path('../config/application', __FILE__)
 require 'rake'
 require 'rake/testtask'
 require 'rdoc/task'
-require 'tasks/rails'
 
 # Rake Fix Code start
 # NOTE: change 'Anelis' to your app's module name (see config/application.rb)
