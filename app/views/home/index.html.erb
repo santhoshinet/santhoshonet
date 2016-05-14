@@ -18,8 +18,10 @@
 					    <p><%=  blog.content[0..463].html_safe %> ...</p>
     					<a class="read-more" href="/blog/<%= blog.id %>/<%= blog.title %>">Read more</a>
 	    			</div><!--post ends-->
+	    		
 		    		<hr />
                  <% end %>
+                 </div>
               <% else %>
                 <div class="post">
                     <div class="post-meta">
