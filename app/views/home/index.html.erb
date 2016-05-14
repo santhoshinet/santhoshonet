@@ -19,7 +19,7 @@
 					    <p>
 					    <% require "html_truncator" %>
 					    <% html = HTML_Truncator.truncate(blog.content,500) %>
-					    <%= html %>
+					    <%= html.html_safe %>
 					    ...</p>
     					<a class="read-more" href="/blog/<%= blog.id %>/<%= blog.title %>">Read more</a>
 	    			</div><!--post ends-->
