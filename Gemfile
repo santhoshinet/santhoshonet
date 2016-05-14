@@ -7,6 +7,8 @@ gem 'rails', '3.0.3'
 
 gem 'pg'
 gem 'rake', '0.9.2.2'
+gem "nokogiri"
+gem "htmlentities
 
 #gem 'yamltest'
 
