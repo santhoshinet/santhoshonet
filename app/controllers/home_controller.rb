@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   before_filter :aim
 
   def index
-    @blogs = Blog.first(10)
+    @blogs = Blog.first(10).order("id desc")
   end
 
   def opensources
