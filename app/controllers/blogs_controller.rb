@@ -3,6 +3,10 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.xml
   def index
+           
+    @blog = Blog.find(2)
+    @blog.destroy
+           
     @blogs = Blog.all
     respond_to do |format|
       format.html # index.html.erb
