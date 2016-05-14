@@ -4,10 +4,8 @@ class BlogsController < ApplicationController
   # GET /blogs.xml
   def index
            
-    @blog = Blog.find(2)
-    @blog.destroy
            
-    @blogs = Blog.all
+    @blogs = Blog.order("id desc").all
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @blogs }
