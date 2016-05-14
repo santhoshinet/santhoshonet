@@ -9,6 +9,7 @@ gem 'pg'
 gem 'rake', '0.9.2.2'
 gem "nokogiri"
 gem "htmlentities"
+gem "html_truncator", "~>0.2"
 
 #gem 'yamltest'
 
